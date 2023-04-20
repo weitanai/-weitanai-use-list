@@ -1,18 +1,17 @@
 {
   "name": "pkg-name",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.1.1",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "weitanai <987346185@qq.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-name#readme",
+  "homepage": "https://github.com/weitanai/pkg-name#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-name.git"
+    "url": "git+https://github.com/weitanai/pkg-name.git"
   },
-  "bugs": "https://github.com/antfu/pkg-name/issues",
+  "bugs": "https://github.com/weitanai/pkg-name/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -44,7 +43,8 @@
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "cusRelease": "node ./scripts/index.js"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
@@ -52,11 +52,15 @@
     "@antfu/utils": "^0.7.2",
     "@types/node": "^18.15.11",
     "bumpp": "^9.1.0",
+    "chalk": "^5.2.0",
+    "enquirer": "^2.3.6",
     "eslint": "^8.37.0",
     "esno": "^0.16.3",
+    "execa": "^7.1.1",
     "lint-staged": "^13.2.0",
     "pnpm": "^8.1.1",
     "rimraf": "^4.4.1",
+    "semver": "^7.5.0",
     "simple-git-hooks": "^2.8.1",
     "typescript": "^5.0.3",
     "unbuild": "^1.2.0",
