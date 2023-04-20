@@ -1,7 +1,15 @@
 # pkg-name
 
-[![NPM version](https://img.shields.io/npm/v/pkg-name?color=a1b858&label=)](https://www.npmjs.com/package/pkg-name)
+## Using this template
+- Search start-ts and replace it with your custom package name.
+- Search weitanai and replace it with your name.
 
+
+## Features:
+
+- Package manager pnpm, safe and fast
+- Bundle with unbuild
+- Test with vitest
 
 
 
