@@ -1,6 +1,6 @@
 # pkg-name
 
-## useage
+## Useage
 
 -  All lib projects can use this project as a base project
 
