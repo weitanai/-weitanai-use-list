@@ -15,7 +15,7 @@
 - Bundle with unbuild
 - Test with vitest
 - Github ci/cd
-- Automatic delivery npm package  and github
+- Automatic delivery to npm and github
 
 ## License
 
