@@ -1,7 +1,7 @@
 {
   "name": "@weimax/use-list",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "packageManager": "pnpm@8.1.1",
   "description": "",
   "author": "weitanai <987346185@qq.com>",
@@ -75,8 +75,5 @@
   },
   "peerDependencies": {
     "vue": "^3.2.47"
-  },
-  "dependencies": {
-    "@weimax/use-list": "workspace:^"
   }
 }
