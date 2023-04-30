@@ -8,7 +8,7 @@ importers:
         specifier: ^0.38.4
         version: 0.38.5(eslint@8.38.0)(typescript@5.0.4)
       '@antfu/ni':
-        specifier: ^0.21.2
+        specifier: ^0.21.3
         version: 0.21.3
       '@antfu/utils':
         specifier: ^0.7.2
