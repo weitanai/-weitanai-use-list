@@ -6,12 +6,12 @@
   "description": "",
   "author": "weitanai <987346185@qq.com>",
   "license": "MIT",
-  "homepage": "https://github.com/weitanai/pkg-name#readme",
+  "homepage": "https://github.com/weitanai//use-list#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weitanai/pkg-name.git"
+    "url": "git+https://github.com/weitanai//use-list.git"
   },
-  "bugs": "https://github.com/weitanai/pkg-name/issues",
+  "bugs": "https://github.com/weitanai//use-list/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {

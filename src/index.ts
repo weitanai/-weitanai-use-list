@@ -3,7 +3,7 @@ import { ref, Ref, onMounted, watch } from 'vue';
 export default function useList<ItemType extends Object, FilterOption extends Object>(
     requestFn: Function,
     options: OptionsType
-) {
+): ReponseType<ItemType> {
     const {
         immediate = true,
         filterOption = ref(),
@@ -76,4 +76,14 @@ export interface OptionsType<T = any> {
     filterOption?: Ref<T>;
     immediate?: boolean;
     pageSize?: number;
+}
+
+export interface ReponseType<T extends any> {
+    list: Ref<T[]>,
+    curPage: Ref<number>,
+    total: Ref<number>,
+    pageSize: Ref<number>,
+    loading: Ref<boolean>,
+    loadData: (page: number) => void,
+    reset: () => void
 }
