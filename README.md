@@ -1,4 +1,4 @@
-# @weitanai/use-list
+# @weimax/use-list
 
 ## Motivation
 - efficient to query, filter table data
@@ -11,7 +11,7 @@
 ## Use
 
 ```bash
-npm install @weitanai/use-list
+npm install @weimax/use-list
 
 ```
 
@@ -22,7 +22,7 @@ npm install @weitanai/use-list
 </template>
 
 <script setup lang='ts'>
-import useList from '@weitanai/use-list';
+import useList from '@weimax/use-list';
 
 const { list, curPage, loadData, reset } = useList(getList, { filterOption });
 
