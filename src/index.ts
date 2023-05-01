@@ -1,9 +1,12 @@
-import { ref, Ref, onMounted, watch } from 'vue';
+import { ref, onMounted, watch } from 'vue';
+import type {ReponseType, OptionsType, Itemtype} from './utils/type';
+import { downloadCSV} from './utils/util';
 
-export default function useList<ItemType extends Object, FilterOption extends Object>(
+
+export default function useList<FilterOption extends Object>(
     requestFn: Function,
     options: OptionsType
-): ReponseType<ItemType> {
+): ReponseType<Itemtype> {
     const {
         immediate = true,
         filterOption = ref(),
@@ -19,7 +22,7 @@ export default function useList<ItemType extends Object, FilterOption extends Ob
     const pageSize = ref(size);
 
     // 数据
-    const list = ref<ItemType[]>([]);
+    const list = ref<Itemtype[]>([]);
     // 过滤数据
     // 获取列表数据
     const loadData = async (page = curPage.value, filter=filterOption) => {
@@ -67,23 +70,7 @@ export default function useList<ItemType extends Object, FilterOption extends Ob
         pageSize,
         loading,
         loadData,
-        reset
+        reset,
+        downloadCSV
     }
-}
-
-
-export interface OptionsType<T = any> {
-    filterOption?: Ref<T>;
-    immediate?: boolean;
-    pageSize?: number;
-}
-
-export interface ReponseType<T extends any> {
-    list: Ref<T[]>,
-    curPage: Ref<number>,
-    total: Ref<number>,
-    pageSize: Ref<number>,
-    loading: Ref<boolean>,
-    loadData: (page: number) => void,
-    reset: () => void
 }

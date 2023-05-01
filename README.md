@@ -11,7 +11,7 @@
 ## Use
 
 ```bash
-npm install @weimax/use-list
+npm install 
 
 ```
 
