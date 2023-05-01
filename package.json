@@ -1,7 +1,7 @@
 {
   "name": "@weimax/use-list",
   "type": "module",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "packageManager": "pnpm@8.1.1",
   "description": "",
   "author": "weitanai <987346185@qq.com>",
